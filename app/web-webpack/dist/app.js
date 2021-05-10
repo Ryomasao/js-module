@@ -5,9 +5,9 @@
 /*!*************************************!*\
   !*** ./packages/js-cjs/src/main.js ***!
   \*************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-exports.default = () => {
+module.exports = () => {
   const getNumber = __webpack_require__(/*! ./sub */ "./packages/js-cjs/src/sub.js").getNumber
   return 100 + getNumber()
 }
@@ -86,9 +86,13 @@ __webpack_require__.r(__webpack_exports__);
 
 const bodyText = js_cjs__WEBPACK_IMPORTED_MODULE_0__();
 
-document.getElementById('body').innerHTML = `
- ${bodyText}
-`
+if(typeof window !== 'undefined') {
+  document.getElementById('app').innerHTML = `
+   <h1>
+    Yes!! ${bodyText}
+   </h1>
+  `
+}
 // for debug
 console.log(bodyText)
 
