@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/js-cjs"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:web-webpack": "webpack --config ./app/web-webpack/webpack.config.js",
+    "serve:web-webpack": "serve ./app/web-webpack/dist"
+  },
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

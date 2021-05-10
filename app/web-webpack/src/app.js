@@ -1,4 +1,4 @@
-import jsCjs from 'js-cjs/src/main'
+import jsCjs from 'js-cjs'
 
 const bodyText = jsCjs();
 

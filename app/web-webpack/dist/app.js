@@ -1,14 +1,14 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../../packages/js-cjs/src/main.js":
-/*!*****************************************!*\
-  !*** ../../packages/js-cjs/src/main.js ***!
-  \*****************************************/
+/***/ "./packages/js-cjs/src/main.js":
+/*!*************************************!*\
+  !*** ./packages/js-cjs/src/main.js ***!
+  \*************************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 exports.default = () => {
-  const getNumber = __webpack_require__(/*! ./sub */ "../../packages/js-cjs/src/sub.js").getNumber
+  const getNumber = __webpack_require__(/*! ./sub */ "./packages/js-cjs/src/sub.js").getNumber
   return 100 + getNumber()
 }
 
@@ -19,10 +19,10 @@ exports.default = () => {
 
 /***/ }),
 
-/***/ "../../packages/js-cjs/src/sub.js":
-/*!****************************************!*\
-  !*** ../../packages/js-cjs/src/sub.js ***!
-  \****************************************/
+/***/ "./packages/js-cjs/src/sub.js":
+/*!************************************!*\
+  !*** ./packages/js-cjs/src/sub.js ***!
+  \************************************/
 /***/ ((__unused_webpack_module, exports) => {
 
 const getNumber = () => {
@@ -77,14 +77,14 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
 "use strict";
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/*!************************************!*\
+  !*** ./app/web-webpack/src/app.js ***!
+  \************************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var js_cjs_src_main__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cjs/src/main */ "../../packages/js-cjs/src/main.js");
+/* harmony import */ var js_cjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! js-cjs */ "./packages/js-cjs/src/main.js");
 
 
-const bodyText = js_cjs_src_main__WEBPACK_IMPORTED_MODULE_0__();
+const bodyText = js_cjs__WEBPACK_IMPORTED_MODULE_0__();
 
 document.getElementById('body').innerHTML = `
  ${bodyText}
